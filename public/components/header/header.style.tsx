@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
+import Image from 'next/image';
 
-export const Header = styled.div`
+export const HeaderWrapper = styled.div`
     display: flex ;
     width: 100%;
     height: 100px ;
-    background-color: black ;
+    border: 1px solid black ;
+    align-items: center ;
+    padding-left: 15px ;
 `;
 
-export const Logo = styled.img`
-background-image: url(logo) ;
-height: 50px ;
-width: 50px ;
+export const StyledImage = styled(Image)`
+  width: 70px;
+  height: 70px ;
 `;
